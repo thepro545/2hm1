@@ -52,7 +52,6 @@ public class Main {
         fullEquals(ravenclaws);
         fullEquals(slytherins);
         powerEquals(hogwarts);
-
     }
 
     public static void printStudents(Hogwarts hogwarts) {
