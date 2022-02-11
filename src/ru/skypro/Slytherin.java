@@ -65,4 +65,31 @@ public class Slytherin extends Hogwarts {
                 "; находчивость " + resourcefulness +
                 "; жажда власти " + lustForPower;
     }
+    public static void fullEquals(Slytherin student1, Slytherin student2) {
+        if (student1.getLustForPower() > student2.getLustForPower()) {
+            System.out.println(student1.getName() + " жаждит власть больше, чем " + student2.getName());
+        } else {
+            System.out.println(student2.getName() + " жаждит власть больше, чем " + student1.getName());
+        }
+        if (student1.getResourcefulness() > student2.getResourcefulness()) {
+            System.out.println(student1.getName() + " находчивее, чем " + student2.getName());
+        } else {
+            System.out.println(student2.getName() + " находчивее, чем " + student1.getName());
+        }
+        if (student1.getAmbition() > student2.getAmbition()) {
+            System.out.println(student1.getName() + " абмициознее, чем " + student2.getName());
+        } else {
+            System.out.println(student2.getName() + " абмициознее, чем " + student1.getName());
+        }
+        if (student1.getDetermination() > student2.getDetermination()) {
+            System.out.println(student1.getName() + " решительнее, чем " + student2.getName());
+        } else {
+            System.out.println(student2.getName() + " решительнее, чем " + student1.getName());
+        }
+        if (student1.getCunning() > student2.getCunning()) {
+            System.out.println(student1.getName() + " хитрее, чем " + student2.getName());
+        } else {
+            System.out.println(student2.getName() + " хитрее, чем " + student1.getName());
+        }
+    }
 }

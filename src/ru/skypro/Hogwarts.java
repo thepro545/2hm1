@@ -80,4 +80,17 @@ public class Hogwarts {
     public int hashCode() {
         return Objects.hash(name, surname, faculty, conjure, transgress);
     }
+
+    public static void powerEquals(Hogwarts[] hogwarts){
+        if (hogwarts[0].getConjure() > hogwarts[5].getConjure()) {
+            System.out.println(hogwarts[0].getName() + " сильнее в магия, чем " + hogwarts[5].getName());
+        } else {
+            System.out.println(hogwarts[5].getName() + " сильнее в магия, чем " + hogwarts[0].getName());
+        }
+        if (hogwarts[0].getTransgress() > hogwarts[5].getTransgress()) {
+            System.out.println("У "+ hogwarts[0].getName() + " расстояни трансгрессии больше, чем у " + hogwarts[5].getName());
+        } else {
+            System.out.println("У "+ hogwarts[5].getName() + " расстояни трансгрессии больше, чем у " + hogwarts[0].getName());
+        }
+    }
 }
